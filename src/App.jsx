@@ -6,63 +6,68 @@ function App() {
 const projects = [
   {
     id: 1,
-    title: "Proprioceptive Tracking with KINARM",
-    description: "Adapting continuous tracking from vision tasks to proprioception for efficient motor data collection. Reduced collection time from 30+ mins to under 3 mins.",
+    title: "SWE Intern Moneyboxx Finance Ltd  ",
+    description: "Prototyped a cow muzzle identifiction system using YOLO and Haar Cascade for farmer insurance and lending",
     languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
-    stars: 12,
-    forks: 3,
     mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=KINARM+Tracking"
+    mediaSrc: "/cow.jpg",
+    buttons: []
   },
   {
     id: 2,
-    title: "Tricuspid Valve MRI Segmentation",
-    description: "Automated segmentation pipeline for tricuspid valves in cardiac MRIs, in collaboration with Oxford. Pending publication.",
+    title: "CMU Space Robotics",
+    description: "Developed an image processing pipeline for lunar environment mapping, utilizing High Dynamic Range (HDR) and COLMAP 3D modelling software for a NASA rover project.",
     languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
-    stars: 22,
-    forks: 4,
     mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=MRI+Segmentation"
+    mediaSrc: "/pit-mapping.png",
+    buttons: [
+      { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1Fr43EZId7VXXtxlc0R_OfvJoi2gizS8lbE758G-oHSA/edit?usp=sharing" }
+    ]
   },
   {
     id: 3,
     title: "Eclipse uProtocol Transport (Rust)",
     description: "Zero-copy shared-memory transport layer for connected vehicles using Iceoryx2 and Protobuf. Integrated into Eclipse ADAS stack.",
     languages: [{ name: "Rust", color: "nodejs" }, { name: "Protobuf", color: "js" }],
-    stars: 44,
-    forks: 11,
-    mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=uProtocol+Rust"
+    mediaType: "video",
+    mediaSrc: "/luna-demo.mov",
+    buttons: [
+      { type: "code", label: "Github", link: "https://github.com/eclipse-uprotocol/up-transport-iceoryx2-rust" },
+    ]
   },
   {
     id: 4,
     title: "Zomato NLP Query Parser",
     description: "Low-latency NLP system to extract structured food-ordering intents using GLiNER and ONNX. Enhanced search relevance in production.",
     languages: [{ name: "Python", color: "python" }, { name: "ONNX", color: "python" }],
-    stars: 35,
-    forks: 6,
-    mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=Zomato+NLP"
+    mediaType: "video",
+    mediaSrc: "/zomato-gradio-demo.mov",
+    buttons: [
+    ]
   },
   {
     id: 5,
     title: "Braille Score Converter",
-    description: "Hackathon-winning tool converting music scores (PDFs or handwritten) into braille and MIDI using computer vision.",
+    description: "Created an application that converts sheet music PDFs into braille using computer vision, enhancing accessibility for visually impaired musicians. As well as to midi files from handwritten or printed scores",
     languages: [{ name: "Python", color: "python" }, { name: "OpenCV", color: "python" }],
-    stars: 18,
-    forks: 5,
     mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=Braille+Music"
+    mediaSrc: "/braille-score-demo.jpg",
+    buttons: [
+      { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/BrailleScore" },
+      { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1rygZEI5tzSmB1Gt921P_hTT8T2PY4bZnCuLgEwQyMAQ/edit?usp=sharing" }
+    ]
   },
   {
     id: 6,
     title: "Astronaut Health Monitoring System",
     description: "Arduino-based prototype that analyzes astronaut excreta to detect health issues. Won special mention at HackCMU.",
     languages: [{ name: "Arduino", color: "js" }, { name: "C++", color: "js" }],
-    stars: 28,
-    forks: 7,
     mediaType: "image",
-    mediaSrc: "https://via.placeholder.com/400x200/21262d/58a6ff?text=Space+Health"
+    mediaSrc: "/planetry-pitstop.jpg",
+    buttons: [
+      { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/planetary-pitstop" },
+      { type: "devpost", label: "Devpost", link: "https://devpost.com/software/planetary-pitstop" }
+    ]
   }
 ];
 
@@ -102,19 +107,18 @@ const projects = [
         {/* README Section */}
         <div className="readme-section">
           <div className="readme-header">
-            <span className="readme-icon">📄</span>
-            <span className="readme-title">README</span>
+            <span className="readme-title">README.md</span>
           </div>
           <div className="readme-content">
             <div className="profile-section">
               <img
-                src="/image.jpg"
+                src="/profile.jpg"
                 alt="Profile"
                 className="profile-pic"
               />
               <p className="description">
   Hi! I'm a CS undergrad at Carnegie Mellon University (Class of 2027), passionate about machine learning, robotics, and systems.
-  I’ve built zero-copy transport layers in Rust, NLP models for food tech, and even biomedical tools with Oxford researchers.
+  I've built zero-copy transport layers in Rust, NLP models for food tech, and even biomedical tools with Oxford researchers.
   I love solving hard problems and building cool stuff — from lunar mapping pipelines to braille music converters.
 </p>
             </div>
@@ -235,16 +239,21 @@ const projects = [
                       ))}
                     </div>
                     
-                    <div className="project-stats">
-                      <div className="stat-item">
-                        <span>⭐</span>
-                        <span>{project.stars}</span>
+                    {project.buttons && project.buttons.length > 0 && (
+                      <div className="project-actions">
+                        {project.buttons.map((button, index) => (
+                          <a 
+                            key={index}
+                            href={button.link} 
+                            className="action-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {button.label}
+                          </a>
+                        ))}
                       </div>
-                      <div className="stat-item">
-                        <span>🍴</span>
-                        <span>{project.forks}</span>
-                      </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               ))}

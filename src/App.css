@@ -23,7 +23,7 @@ width: 100vw;
 margin: 0 auto;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-between; 
 padding: 0 32px;
 }
 
@@ -394,7 +394,7 @@ color: #7d8590;
 
 .project-media {
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-color: #21262d;
   border-radius: 6px;
   margin-bottom: 12px;
@@ -476,6 +476,38 @@ color: #7d8590;
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: none;
+  border: 1px solid #238636;
+  color: #238636;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #238636;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.action-btn span {
+  font-size: 14px;
 }
 
 /* Language Colors */
