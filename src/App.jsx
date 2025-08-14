@@ -406,26 +406,6 @@ function App() {
   const featured = [
   {
     id: 1,
-    title: "SWE Intern Moneyboxx Finance Ltd  ",
-    description: "Prototyped a cow muzzle identifiction system using YOLO and Haar Cascade for farmer insurance and lending",
-    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
-    mediaType: "image",
-    mediaSrc: "/cow.jpg",
-    buttons: []
-  },
-  {
-    id: 2,
-    title: "CMU Space Robotics",
-    description: "Developed an image processing pipeline for lunar environment mapping, utilizing High Dynamic Range (HDR) and COLMAP 3D modelling software for a NASA rover project.",
-    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
-    mediaType: "image",
-    mediaSrc: "/pit-mapping.png",
-    buttons: [
-      { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1Fr43EZId7VXXtxlc0R_OfvJoi2gizS8lbE758G-oHSA/edit?usp=sharing" }
-    ]
-  },
-  {
-    id: 3,
     title: "Eclipse uProtocol Transport (Rust)",
     description: "Zero-copy shared-memory transport layer for connected vehicles using Iceoryx2 and Protobuf. Integrated into Eclipse ADAS stack.",
     languages: [{ name: "Rust", color: "nodejs" }, { name: "Protobuf", color: "js" }],
@@ -436,7 +416,7 @@ function App() {
     ]
   },
   {
-    id: 4,
+    id: 2,
     title: "Zomato NLP Query Parser",
     description: "Low-latency NLP system to extract structured food-ordering intents using GLiNER and ONNX. Enhanced search relevance in production.",
     languages: [{ name: "Python", color: "python" }, { name: "ONNX", color: "python" }],
@@ -446,7 +426,7 @@ function App() {
     ]
   },
   {
-    id: 5,
+    id: 3,
     title: "Braille Score Converter",
     description: "Created an application that converts sheet music PDFs into braille using computer vision, enhancing accessibility for visually impaired musicians. As well as to midi files from handwritten or printed scores",
     languages: [{ name: "Python", color: "python" }, { name: "OpenCV", color: "python" }],
@@ -458,7 +438,7 @@ function App() {
     ]
   },
   {
-    id: 6,
+    id: 4,
     title: "Astronaut Health Monitoring System",
     description: "Arduino-based prototype that analyzes astronaut excreta to detect health issues. Won special mention at HackCMU.",
     languages: [{ name: "Arduino", color: "js" }, { name: "C++", color: "js" }],
@@ -468,28 +448,30 @@ function App() {
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/planetary-pitstop" },
       { type: "devpost", label: "Devpost", link: "https://devpost.com/software/planetary-pitstop" }
     ]
-  }
+  },
+  {
+    id: 5,
+    title: "SWE Intern Moneyboxx Finance Ltd  ",
+    description: "Prototyped a cow muzzle identifiction system using YOLO and Haar Cascade for farmer insurance and lending",
+    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
+    mediaType: "image",
+    mediaSrc: "/cow.jpg",
+    buttons: []
+  },
+  {
+    id: 6,
+    title: "CMU Space Robotics",
+    description: "Developed an image processing pipeline for lunar environment mapping, utilizing High Dynamic Range (HDR) and COLMAP 3D modelling software for a NASA rover project.",
+    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
+    mediaType: "image",
+    mediaSrc: "/pit-mapping.png",
+    buttons: [
+      { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1Fr43EZId7VXXtxlc0R_OfvJoi2gizS8lbE758G-oHSA/edit?usp=sharing" }
+    ]
+  },
 ];
 
 const projects = [
-  {
-    id: 1,
-    title: "Research Assistant – Physical Intelligence Lab, CMU",
-    description: "Leading a project on proprioceptive tracking with a KINARM, adapting continuous tracking methods from visual tasks to improve data collection efficiency from 30+ mins to under 3 mins.",
-    languages: [{ name: "Python", color: "python" }],
-    // mediaType: "image",
-    // mediaSrc: "/kinarm.jpg",
-    buttons: []
-  },
-  {
-    id: 2,
-    title: "Research Project – Oxford University Collaboration",
-    description: "Developed a program automating tricuspid valve segmentation from MRI scans using Python and MATLAB; research pending publication.",
-    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
-    // mediaType: "image",
-    // mediaSrc: "/mri-segmentation.jpg",
-    buttons: []
-  },
   {
     id: 3,
     title: "CMU Space Robotics",
@@ -524,7 +506,25 @@ const projects = [
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/planetary-pitstop" },
       { type: "devpost", label: "Devpost", link: "https://devpost.com/software/planetary-pitstop" }
     ]
-  }
+  },
+  {
+    id: 1,
+    title: "Research Assistant – Physical Intelligence Lab, CMU",
+    description: "Leading a project on proprioceptive tracking with a KINARM, adapting continuous tracking methods from visual tasks to improve data collection efficiency from 30+ mins to under 3 mins.",
+    languages: [{ name: "Python", color: "python" }],
+    // mediaType: "image",
+    // mediaSrc: "/kinarm.jpg",
+    buttons: []
+  },
+  {
+    id: 2,
+    title: "Research Project – Oxford University Collaboration",
+    description: "Developed a program automating tricuspid valve segmentation from MRI scans using Python and MATLAB; research pending publication.",
+    languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
+    // mediaType: "image",
+    // mediaSrc: "/mri-segmentation.jpg",
+    buttons: []
+  },
 ];
 
   const experiences = [
@@ -556,6 +556,18 @@ const projects = [
   },
   {
     id: 3,
+    title: "SWE Intern – Moneyboxx Finance Ltd",
+    description: "Prototyped a cow muzzle recognition system using YOLO and Haar Cascade for farmer insurance and lending.",
+    languages: [
+      { name: "Python", color: "python" },
+      { name: "MATLAB", color: "python" }
+    ],
+    mediaType: "image",
+    mediaSrc: "/cow.jpg",
+    buttons: []
+  },
+  {
+    id: 4,
     title: "Teaching Assistant – Web Application Development, CMU",
     description: "Mentored 60+ students in full-stack engineering principles such as React, REST APIs, and cloud deployment. Held weekly office hours and contributed to refining course content and project infrastructure.",
     languages: [
@@ -567,7 +579,7 @@ const projects = [
     buttons: []
   },
   {
-    id: 4,
+    id: 5,
     title: "Undergraduate Tutor – 15-151 Discrete Mathematics, CMU",
     description: "Tutored one-on-one, assisting students with problem solving and mastering a rigorous core CS course.",
     languages: [
@@ -575,18 +587,6 @@ const projects = [
     ],
     // mediaType: "image",
     // mediaSrc: "/discrete-math.jpg",
-    buttons: []
-  },
-  {
-    id: 5,
-    title: "SWE Intern – Moneyboxx Finance Ltd",
-    description: "Prototyped a cow muzzle recognition system using YOLO and Haar Cascade for farmer insurance and lending.",
-    languages: [
-      { name: "Python", color: "python" },
-      { name: "MATLAB", color: "python" }
-    ],
-    mediaType: "image",
-    mediaSrc: "/cow.jpg",
     buttons: []
   },
   {
