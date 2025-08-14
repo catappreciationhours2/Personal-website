@@ -463,7 +463,7 @@ function App() {
     description: "Prototyped a cow muzzle identifiction system using YOLO and Haar Cascade for farmer insurance and lending",
     languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
     mediaType: "image",
-    mediaSrc: {cow},
+    mediaSrc: cow,
     buttons: []
   },
   {
