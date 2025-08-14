@@ -418,7 +418,7 @@ function App() {
     description: "Zero-copy shared-memory transport layer for connected vehicles using Iceoryx2 and Protobuf. Integrated into Eclipse ADAS stack.",
     languages: [{ name: "Rust", color: "nodejs" }, { name: "Protobuf", color: "js" }],
     mediaType: "video",
-    mediaSrc: {luna},
+    mediaSrc: luna,
     buttons: [
       { type: "code", label: "Github", link: "https://github.com/eclipse-uprotocol/up-transport-iceoryx2-rust" },
     ]
@@ -429,7 +429,7 @@ function App() {
     description: "Low-latency NLP system to extract structured food-ordering intents using GLiNER and ONNX. Enhanced search relevance in production.",
     languages: [{ name: "Python", color: "python" }, { name: "ONNX", color: "python" }],
     mediaType: "video",
-    mediaSrc: {zomato},
+    mediaSrc: zomato,
     buttons: [
     ]
   },
@@ -439,7 +439,7 @@ function App() {
     description: "Created an application that converts sheet music PDFs into braille using computer vision, enhancing accessibility for visually impaired musicians. As well as to midi files from handwritten or printed scores",
     languages: [{ name: "Python", color: "python" }, { name: "OpenCV", color: "python" }],
     mediaType: "image",
-    mediaSrc: {braille},
+    mediaSrc: braille,
     buttons: [
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/BrailleScore" },
       { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1rygZEI5tzSmB1Gt921P_hTT8T2PY4bZnCuLgEwQyMAQ/edit?usp=sharing" }
@@ -451,7 +451,7 @@ function App() {
     description: "Arduino-based prototype that analyzes astronaut excreta to detect health issues. Won special mention at HackCMU.",
     languages: [{ name: "Arduino", color: "js" }, { name: "C++", color: "js" }],
     mediaType: "image",
-    mediaSrc: {planetary},
+    mediaSrc: planetary,
     buttons: [
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/planetary-pitstop" },
       { type: "devpost", label: "Devpost", link: "https://devpost.com/software/planetary-pitstop" }
@@ -472,7 +472,7 @@ function App() {
     description: "Developed an image processing pipeline for lunar environment mapping, utilizing High Dynamic Range (HDR) and COLMAP 3D modelling software for a NASA rover project.",
     languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
     mediaType: "image",
-    mediaSrc: {pitmap},
+    mediaSrc: pitmap,
     buttons: [
       { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1Fr43EZId7VXXtxlc0R_OfvJoi2gizS8lbE758G-oHSA/edit?usp=sharing" }
     ]
@@ -486,7 +486,7 @@ const projects = [
     description: "Developed an image processing pipeline for lunar environment mapping, utilizing High Dynamic Range (HDR) and COLMAP 3D modelling software for a NASA rover project.",
     languages: [{ name: "Python", color: "python" }, { name: "MATLAB", color: "python" }],
     mediaType: "image",
-    mediaSrc: {pitmap},
+    mediaSrc: pitmap,
     buttons: [
       { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1Fr43EZId7VXXtxlc0R_OfvJoi2gizS8lbE758G-oHSA/edit?usp=sharing" }
     ]
@@ -497,7 +497,7 @@ const projects = [
     description: "Created an application that converts sheet music PDFs into braille using computer vision, enhancing accessibility for visually impaired musicians, and converts to MIDI files from handwritten or printed scores.",
     languages: [{ name: "Python", color: "python" }, { name: "OpenCV", color: "python" }],
     mediaType: "image",
-    mediaSrc: {braille},
+    mediaSrc: braille,
     buttons: [
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/BrailleScore" },
       { type: "slides", label: "Slides", link: "https://docs.google.com/presentation/d/1rygZEI5tzSmB1Gt921P_hTT8T2PY4bZnCuLgEwQyMAQ/edit?usp=sharing" }
@@ -509,7 +509,7 @@ const projects = [
     description: "Developed and prototyped an astronaut health monitoring system by analyzing excreta using sensors and Arduinos for early detection of potential health issues in space. Won Special Mention and award worth $600.",
     languages: [{ name: "Arduino", color: "js" }, { name: "C++", color: "js" }],
     mediaType: "image",
-    mediaSrc: {planetary},
+    mediaSrc: planetary,
     buttons: [
       { type: "code", label: "Code", link: "https://github.com/catappreciationhours2/planetary-pitstop" },
       { type: "devpost", label: "Devpost", link: "https://devpost.com/software/planetary-pitstop" }
@@ -545,7 +545,7 @@ const projects = [
       { name: "ONNX", color: "python" }
     ],
     mediaType: "video",
-    mediaSrc: {zomato},
+    mediaSrc: zomato,
     buttons: []
   },
   {
@@ -557,7 +557,7 @@ const projects = [
       { name: "Protobuf", color: "js" }
     ],
     mediaType: "video",
-    mediaSrc: {luna},
+    mediaSrc: luna,
     buttons: [
       { type: "code", label: "GitHub", link: "https://github.com/eclipse-uprotocol/up-transport-iceoryx2-rust" }
     ]
@@ -571,7 +571,7 @@ const projects = [
       { name: "MATLAB", color: "python" }
     ],
     mediaType: "image",
-    mediaSrc: {cow},
+    mediaSrc: cow,
     buttons: []
   },
   {
