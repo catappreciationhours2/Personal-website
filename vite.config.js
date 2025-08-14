@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 const repoName = 'personal-website';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/', 
+  base: "/personal-website", 
   plugins: [react()],
 })
