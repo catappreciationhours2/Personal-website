@@ -604,16 +604,14 @@ const projects = [
 ];
 
   return (
-    <Router>
-      <div className="github-container">
-        <Navigation projects={projects} experiences={experiences} />
-        <Routes>
-          <Route path="/" element={<HomePage featured={featured} />} />
-          <Route path="/projects" element={<ProjectsPage projects={projects} />} />
-          <Route path="/experience" element={<ExperiencePage experiences={experiences} />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="github-container">
+      <Navigation projects={projects} experiences={experiences} />
+      <Routes>
+        <Route path="/" element={<HomePage featured={featured} />} />
+        <Route path="/projects" element={<ProjectsPage projects={projects} />} />
+        <Route path="/experience" element={<ExperiencePage experiences={experiences} />} />
+      </Routes>
+    </div>
   );
 }
 
